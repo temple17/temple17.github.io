@@ -4,9 +4,9 @@ main:
     url: https://temple17.github.io
   - title: "About"
     url: /about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
+  - title: "Python"
+    url: /python/
+  # - title: "Programmers"
+  #   url: /python/programmers
   # - title: "Sitemap"
   #   url: /sitemap/
