@@ -188,16 +188,16 @@ textarea {
 
 // #Scroll custom
 
-::-webkit-scrollbar{
-  width: 12px; // 세로 스크롤의 너비
-  height: 10px; // 가로 스크롤의 너비
-  background-color: #dcdfe4; // 스크롤의 기본 배경색상
-}
-::-webkit-scrollbar-thumb{
- // 스크롤바 곡률
-  background-color: #012e67; // 스크롤바 색상
-}
-
-::-webkit-scrollbar-track:horizontal{
-  background-color: #002a29; // 가로 스크롤바 색상
-}
+// ::-webkit-scrollbar{
+//   width: 12px; // 세로 스크롤의 너비
+//   height: 10px; // 가로 스크롤의 너비
+//   background-color: #dcdfe4; // 스크롤의 기본 배경색상
+// }
+// ::-webkit-scrollbar-thumb{
+//  // 스크롤바 곡률
+//   background-color: #012e67; // 스크롤바 색상
+// }
+// 
+// ::-webkit-scrollbar-track:horizontal{
+//   background-color: #002a29; // 가로 스크롤바 색상
+// }
