@@ -6,6 +6,8 @@ main:
     url: /about/
   - title: "Python"
     url: /python/
+  - title: "Categories"
+    url: /categories/
   # - title: "Programmers"
   #   url: /python/programmers
   # - title: "Sitemap"
