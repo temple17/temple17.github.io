@@ -4,9 +4,9 @@ main:
     url: https://temple17.github.io
   - title: "About"
     url: /about/
-  - title: "Python"
-    url: /python/
-  - title: "Categories"
+  # - title: "Python"
+  #   url: /python/
+  - title: "Category"
     url: /categories/
   # - title: "Programmers"
   #   url: /python/programmers
