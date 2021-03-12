@@ -10,15 +10,15 @@
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
 #Archive setting
----
-title: "Posts by Category"
-layout: categories
-permalink: /categories/
-author_profile: true
----
+# ---
+# title: "Posts by Category"
+# layout: categories
+# permalink: /categories/
+# author_profile: true
+# ---
 
 # theme                  : "minimal-mistakes-jekyll"
-remote_theme           : "mmistakes/minimal-mistakes@4.22.0"
+remote_theme           : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
