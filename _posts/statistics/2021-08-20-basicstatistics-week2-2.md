@@ -1,5 +1,5 @@
 ---
-title: 기초통계 2주차-2
+title: [KMOOC] 기초통계 2주차-2
 date: 2021-08-18 12:25:00
 toc: true
 toc_sticky: true
