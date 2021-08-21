@@ -1,5 +1,5 @@
 ---
-title: CS229 시작에 앞서
+title: CS229 Lecture 1-Welcome
 date: 2021-08-20 12:25:00
 toc: true
 toc_sticky: true
