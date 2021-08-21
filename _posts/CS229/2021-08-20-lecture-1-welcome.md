@@ -10,24 +10,60 @@ tags:
 ---
 
 
-## 강좌 소개
+# "ML & AI will change the world."
 
-Stanford 대학의 Andrew ng 교수는 AI 분야에서 굉장히 저명한 분으로 유명합니다.  
-그 중 ML 강좌인 CS229와 딥러닝 강좌인 CS231n은 오랫동안 가장 인기있는 강좌입니다.
-순서는 CS229를 먼저 수강하고 그 다음에 CS231n을 듣는 것이 입문자에게는 적합합니다.
-Coursera에서도 이 강의를 들을 수 있고, [이지업](https://www.easyupclass.com/course/56/about)에서는 번역된 강의도 볼 수 있으니,   
-영어로만 수업을 따라가기 어려우신 분들은 이지업을 활용하는 것도 좋을 것 같습니다.  
+## Goal of this lecture
+Be the expert in machine learning.  
+But machine learning is so pervasive.  
 
-CS229는 현재 [유튜브](https://youtu.be/jGwO_UgTS7I)에서 무료로 시청할 수 있다.
+## Prerequisite
+- Big O notation
+- Queue, stacks, and binary trees
+- Basic with probability
+- Basic linear algebra & eigenvector  
 
-관련 Syllabus나 lecture note도 아래에 첨부하겠다.  
-또한 구글에 cs229를 포함하여 검색하면 다양한 github도 찾을 수 있다.
+## Best part of CS229
+- class project
+  - complete meaningful ML project as a team
+> Using convex optimization algorithm is the main key
 
-- [Syllabus](http://cs229.stanford.edu/syllabus-fall2020.html)
-- [Lecture note](https://see.stanford.edu/materials/aimlcs229/cs229-notes1.pdf)
+## CSxxx class difference
+- CS229 : most mathmethical
+- CS229a : less math than CS229
+- CS231n : mostly about deep learning
 
+## Quick overview
+"Machine learning is everywhere.   
+Do meaningful work and take the opportunity of superpower."
 
-## 정리 방향
+### Supervised learning
+- used in solving a regression problem & classification problem
+- X -> Y
+- In actual study, there are multiple features which consist high-dimension
+- SVM(support vecotr machine) allows infinite dimesion vector(learn in next lectures)
 
-이 블로그에는 제가 공부하면서 정리한 것들을 요약 정리하면서,  
-복습하는 공간으로 활용할 예정입니다.
+#### Regression problem
+- Y is continous value
+- Example : predicting housing price
+  - X : size(squared feet) / Y : price
+
+#### Classification problem
+- Y is discrete value
+- Example : classifying breast tumor
+  - X : tumor size / Y : malignancy(0 : non-malignant, 1: malignant)
+
+> Input X, label Y -> find mapping(+ X is given) -> Return new Y
+
+### Unsupervised learning
+- Input X, and no label Y
+- Find interesting pattern of characteristic by its own
+- Example : Cocktail party problem(using ica algorithm)
+  - How to seperate voices? (Clustering)
+
+### Reinforcement learning
+- Don't know optimal ways
+- Keep training
+
+## Conclusion
+The model looks like this
+![](/assets/images/cs229/CS229.jpg){: .align-center}
