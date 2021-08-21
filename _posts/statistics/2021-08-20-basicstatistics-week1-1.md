@@ -6,10 +6,11 @@ toc_sticky: true
 categories: statistics
 tags:
   - KMOOC
+---
 
 
+## 소개
 
-## 주제
+> DS 공부 시작으로 KMOOC에서 기초통계 수업을 수강 중입니다. 강좌명은 통계학의 이해1이고, 숙명여대의 여인권 교수님의 수업입니다.
 
->ㅇㅁㄻㄹ
-ㅇㅁㄹㄻㅇㄻㅁㄹ
+### 정리 방향
