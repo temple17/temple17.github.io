@@ -1,0 +1,37 @@
+---
+title: KMOOC 기초통계 5주차-2
+date: 2021-08-22 12:25:00
+toc: true
+toc_sticky: true
+categories: statistics
+tags:
+  - KMOOC
+---
+
+# 경우의 수
+
+## 경우의 수(the number of cases)
+- 확률을 계산하기 위해서는 표본공간과 사건에 있는 원소의  
+  개수를 효율적으로 계산하는 것이 중요
+- 기본 법칙은 곱의 법칙(multiplication rule)
+  - 어떤 실험이 m개의 연속된 단계로 이루어짐
+  - ni : i번째 단계에서 발생 가능한 결과의 수
+  - 전체 실험에서 발생 가능한 경우의 수  
+  ![](/assets/images/statistics/numbercase.png) 
+
+### 추출방법
+- 복원(with replacement)추출
+- 비복원(without replacecment)추출
+
+### 뽑힌 순서
+- 순서고려 O
+- 순서고려 X  
+![](/assets/images/statistics/numbercase2.png) 
+  - A : 중복순열
+  - B : 순열(permutation)
+  - C : 중복조합
+  - D : 조합(combination)
+
+
+
+
