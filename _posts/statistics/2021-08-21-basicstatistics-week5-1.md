@@ -44,3 +44,4 @@ tags:
     ![](/assets/images/statistics/samplespace.png) 
 
 
+> 사진과 글은 KMOOC 사이트에서 숙명여대의 여인권 교수님의 [통계학의 이해1] 수업자료를 바탕으로 했습니다.  
