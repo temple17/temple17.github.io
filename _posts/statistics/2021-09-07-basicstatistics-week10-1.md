@@ -25,7 +25,7 @@ X : 위의 상황에서 해당 사건이 일어날 횟수
 - 람다에 따라 분포의 형태가 달라짐 => 람다 = 모수(parameter)라고 부름
 
 ## 포아송분포의 성질
-![](/assets/images/statistics/possion2.png)   
+![](/assets/images/statistics/possion2.png)    
 ![](/assets/images/statistics/possion3.png)
 
 
