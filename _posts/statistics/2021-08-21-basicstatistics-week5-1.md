@@ -34,14 +34,14 @@ tags:
   - n : 표본공간의 원소개수
   - k : 사건 A의 원소개수
   - 사건 A의 확률  
-  ![](/assets/images/statistics/pa.png) 
+  ![](/assets/images/statistics/pa.PNG) 
 
 ## 연속표본공간
 - 발생가능성이 동일한 상황을 선이나 평면 등을 이용
 - 사건 A가 발생한다는 것은, 표본공간 내에서 무작위로 한 점을  
   선택할 때 이 점이 영역 A에 있다는 의미
 - 사건 A의 확률은 전체 영역에서 A가 차지하는 비율  
-    ![](/assets/images/statistics/samplespace.png) 
+    ![](/assets/images/statistics/samplespace.PNG) 
 
 
 > 사진과 글은 KMOOC 사이트에서 숙명여대의 여인권 교수님의 [통계학의 이해1] 수업자료를 바탕으로 했습니다.  

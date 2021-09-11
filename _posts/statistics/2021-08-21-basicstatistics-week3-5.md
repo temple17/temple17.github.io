@@ -17,27 +17,27 @@ tags:
 ![](/assets/images/statistics/skewness.jpg)
 - 피어슨(Karl Pearson) 제안
 
-![](./assets/images/statistics/skewness2.png)  
+![](./assets/images/statistics/skewness2.PNG)  
 
 
-![](./assets/images/statistics/skewness3.png)  
+![](./assets/images/statistics/skewness3.PNG)  
 
 - 오른쪽 꼬리가 길면 큰 양수값을 가짐(양의 왜도 <-> 음의 왜도)
 
 - 수정된 왜도  
-![](/assets/images/statistics/skewness4.png)  
+![](/assets/images/statistics/skewness4.PNG)  
 
 ## 첨도(kurtosis)
 - 양쪽꼬리가 얼마나 두터운지를 나타내는 값  
 ![](/assets/images/statistics/kurtosis.jpg)    
 
 - 피어슨(Karl Pearson) 제안  
-![](/assets/images/statistics/kurtosis2.png)   
-![](/assets/images/statistics/kurtosis3.png)   
+![](/assets/images/statistics/kurtosis2.PNG)   
+![](/assets/images/statistics/kurtosis3.PNG)   
 
 - 정규분포의 경우 이론적으로 첨도는 3
 - 수정된 첨도  
-![](/assets/images/statistics/kurtosis4.png)   
+![](/assets/images/statistics/kurtosis4.PNG)   
 
 ### 왜도 & 첨도의 활용
 - 자료 분포의 형태를 나타내는 측도
@@ -47,7 +47,7 @@ tags:
 - 정규성 검정
   - 왜도 = 0, 첨도 = 3이 아니라면?
     - Jacque-Bera 검정  
-    ![](/assets/images/statistics/jacque.png)   
+    ![](/assets/images/statistics/jacque.PNG)   
 
 
 > 사진과 글은 KMOOC 사이트에서 숙명여대의 여인권 교수님의 [통계학의 이해1] 수업자료를 바탕으로 했습니다.  

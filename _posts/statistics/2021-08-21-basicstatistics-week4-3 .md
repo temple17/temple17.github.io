@@ -15,7 +15,7 @@ tags:
 - 자료표시 : (x1,y1), (x2,y2),...,(xn,yn)
 
 - 양과 음의 관계를 가지는 산점도  
-![](/assets/images/statistics/covariance scatter.png)
+![](/assets/images/statistics/covariance scatter.PNG)
 
   - 고려사항
     - 위치에 따라 직선관계에는 변화가 없음
@@ -24,18 +24,18 @@ tags:
 
 ## 표본공분산(sample covariance)
 
-![](/assets/images/statistics/sample covariance.png)  
+![](/assets/images/statistics/sample covariance.PNG)  
 - 좌 그림 : 양의 기울기인 선분에 자료가 모여 있음 => c > 0  
 - 우 그림 : 음의 기울기인 선분에 자료가 모여 있음 => c < 0
 - yi를 xi로 바꾸면  
-![](/assets/images/statistics/covariance2.png)  
+![](/assets/images/statistics/covariance2.PNG)  
 => 분산(하나의 변수 x)
 
 - 직선관계가 없는 산점도(c가 0에 근접)  
-![](/assets/images/statistics/covariance3.png)  
+![](/assets/images/statistics/covariance3.PNG)  
 
 - 표본공분산의 간편식  
-![](/assets/images/statistics/covariance4.png)  
+![](/assets/images/statistics/covariance4.PNG)  
 
 ## 표본상관계수(coefficient of correlation)
 - 표본공분산의 문제점
@@ -45,10 +45,10 @@ tags:
 
 - 피어슨의 표본상관계수
   - 표준화된 자료의 표본공분산  
-![](/assets/images/statistics/coefficientcorr.png)  
+![](/assets/images/statistics/coefficientcorr.PNG)  
 - 표본상관계수의 간편식  
-![](/assets/images/statistics/coefficientcorr2.png)   
-  - Cauchy-Schwartz 부등식 : ![](/assets/images/statistics/cauchy.png)  
+![](/assets/images/statistics/coefficientcorr2.PNG)   
+  - Cauchy-Schwartz 부등식 : ![](/assets/images/statistics/cauchy.PNG)  
   => -1 <= r <= 1
 
 - 표본상관계수의 성질

@@ -40,7 +40,7 @@ tags:
 
 #### Overfitting the Training Data
 - overfitting : the model performs well on the training data, but it does not generalize well     
-![](/assets/images/book/overfitting.png)
+![](/assets/images/book/overfitting.PNG)
 - the model is likely to detect patterns in the noise itself
 - overfitting happens when the model is too complex relative to the amount and noisiness of the training data
   - solutions : 

@@ -13,17 +13,17 @@ tags:
 
 - 성공할 확률이 p인 베르누이 실험을 n번 반복했을 때 성공 횟수(X)의 분포
 - Xi ~ B(p)라고 할 때, 성공 횟수 X는 n개의 베르누이 확률변수를 합으로 표시  
-![](/assets/images/statistics/binomial.png)
+![](/assets/images/statistics/binomial.PNG)
 - 기댓값
-![](/assets/images/statistics/binomial2.png)
+![](/assets/images/statistics/binomial2.PNG)
   - 독립시행이기 때문에 Var를 구할 때 공분산은 0으로 계산된다.
 - 시행횟수 n, 성공확률 p인 이항분포의 확률질량함수  
-![](/assets/images/statistics/binomial3.png)
+![](/assets/images/statistics/binomial3.PNG)
   - n과 p에 따라 확률이 달라짐  
   => 이항분포의 모양을 결정  
   => 분포의 특성을 완전히 결정하는 값: 모수(parameter)
 -  X~B(n,p) n : 실험횟수, p : 성공확률  
-![](/assets/images/statistics/binomial4.png)
+![](/assets/images/statistics/binomial4.PNG)
 
 
 

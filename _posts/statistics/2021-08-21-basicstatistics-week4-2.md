@@ -33,7 +33,7 @@ tags:
 ## 산점도 행렬(scatter matrix)
 - 3개 이상의 수치변수에 대해 두 변수씩 쌍으로 조합하여 산점도를 행렬형태로 표시  
   - 예 : 평균기온, 강수량, 평균습도  
-  ![](/assets/images/statistics/scattermatrix.png)
+  ![](/assets/images/statistics/scattermatrix.PNG)
 
 # 시계열그림(time series plot)
 - 시계열자료 : 시간에 따라 수집된 자료

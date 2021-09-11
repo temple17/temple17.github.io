@@ -13,7 +13,7 @@ tags:
 ## 확률변수(random variable)
 - 표본공간에서 정의된 실함수(real-valued function)
 - 정의역이 표본공간이고 공역이 실수인 함수 => 확률실험 + 불확실성  
-![](/assets/images/statistics/rndvariable.png)
+![](/assets/images/statistics/rndvariable.PNG)
 - 표본공간을 숫자로 표시하고 불확실한 현상을 수학적으로 모형화
   - 불확실성을 제거하는 것이 아니고, 구체적으로 계량화된 분석을 할 수 있음
 - 확률변수는 대문자 X,Y,Z 등으로 표시하며 확률변수의 값은 소문자 x,y,z 등으로 표시
@@ -28,11 +28,11 @@ tags:
 
 ## 확률분포(probability distribution) => [0,1]
 - 확률변수의 값에 대해 확률을 표시한 것  
-![](/assets/images/statistics/probaility distribution.png)
+![](/assets/images/statistics/probaility distribution.PNG)
 - 확률변수는 표본공간의 값을 숫자로 바꾼 함수
   - 확률변수가 어떤 값을 가진다는 것은 표본공간 내에 대응하는 원소들이 존재
 - 수식표현  
-![](/assets/images/statistics/probaility distribution2.png)
+![](/assets/images/statistics/probaility distribution2.PNG)
   - 확률변수에 대해 X=x 또는 a <= X <= b에 대응하는 확률을 계산할 수 있음
 - 확률변수는 숫자로 표시되고 해당 숫자에 대한 확률을 구할 수 있음
  - 확률변수의 값에 따라 확률이 어떤 형태로 분포되어 있다는 말을 할 수 있음

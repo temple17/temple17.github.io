@@ -22,11 +22,11 @@ tags:
     => f(x) = p(1-p)^(x-1)
     - 기하분포(geometric distribution)  
 - 확률질량함수의 성질  
-![](/assets/images/statistics/probability mass function.png)
+![](/assets/images/statistics/probability mass function.PNG)
 
 ### 누적분포함수(cumulative distribution function)
 - 성질 3의 특수한 형태  
-![](/assets/images/statistics/probability mass function2.png)
+![](/assets/images/statistics/probability mass function2.PNG)
 
 ## 확률변수의 변환(transformation)
 - 확률변수의 변환(함수) => 확률변수의 함수도 확률변수

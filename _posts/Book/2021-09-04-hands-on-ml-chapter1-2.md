@@ -24,9 +24,9 @@ tags:
 - train the system incrementally
 - each learning step is fast and cheap
 - can learn about new data on the fly, as it arrives    
-![](/assets/images/book/online learning.png)
+![](/assets/images/book/online learning.PNG)
 - online learning is great for systems that receive data as a continous flow and need to adapt to change rapidly or autonomously    
-![](/assets/images/book/online learning2.png)
+![](/assets/images/book/online learning2.PNG)
 - ***One important parameter of online learning systems is how fast they should adapt to changing data : learning rate***
   - set high learning rate : then system will rapidly adapt to new data, but it will also tend to quickly forget the old data
   - set low learning rate : then system will have more inertia, also be less sensitive to noise in the new data or to sequences of nonrepresentative data points(outliers)
@@ -37,11 +37,11 @@ tags:
 
 #### Instance-Based learning
 - The system learns the examples by heart, then generalizes to new cases by comparing them to the learned examples, using a similarity measure    
-![](/assets/images/book/instance-based.png)
+![](/assets/images/book/instance-based.PNG)
 
 #### Model-based learning
 - Build a model of these examples, then use that model to make predictions    
-![](/assets/images/book/model-based.png)
+![](/assets/images/book/model-based.PNG)
 
 
 - training the model : feed algorithm your training examples and it finds the parameters that make the model fit best to your data

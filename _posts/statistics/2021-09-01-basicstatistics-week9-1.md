@@ -18,13 +18,13 @@ tags:
 
 ### 베르누이 확률변수
 - 모수(성공할 확률)가 p인 베르누이시행  
-![](/assets/images/statistics/bernoulli.png)
+![](/assets/images/statistics/bernoulli.PNG)
 - P(X=1) = P(성공) = p, P(X = 0) = P(실패) = 1 - p
 - 확률질량함수  
-![](/assets/images/statistics/bernoulli2.png)
+![](/assets/images/statistics/bernoulli2.PNG)
 - X ~ B(P)로 표기
 - 기댓값  
-![](/assets/images/statistics/bernoulli3.png)
+![](/assets/images/statistics/bernoulli3.PNG)
 
 
 > 사진과 글은 KMOOC 사이트에서 숙명여대의 여인권 교수님의 [통계학의 이해1] 수업자료를 바탕으로 했습니다.  

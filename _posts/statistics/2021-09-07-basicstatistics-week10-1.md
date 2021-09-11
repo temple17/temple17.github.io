@@ -16,7 +16,7 @@ tags:
 3. p가 0.5에서 멀리 떨어져 있지 않은 경우
 - X ~ B(n,p)
   - p가 매우 작으면 큰 x에 대한 확률은 무시할 정도로 작음  
-![](/assets/images/statistics/possion.png)
+![](/assets/images/statistics/possion.PNG)
 - 구간을 나눴을 때 각 구간의 발생 빈도는 서로 독립(independent increment)
 - 구간의 위치와 관계없이 동일 길이의 구간에서의 평균발생빈도는 동일(stationary increment)
 
@@ -25,8 +25,8 @@ X : 위의 상황에서 해당 사건이 일어날 횟수
 - 람다에 따라 분포의 형태가 달라짐 => 람다 = 모수(parameter)라고 부름
 
 ## 포아송분포의 성질
-![](/assets/images/statistics/possion2.png)    
-![](/assets/images/statistics/possion3.png)
+![](/assets/images/statistics/possion2.PNG)    
+![](/assets/images/statistics/possion3.PNG)
 
 
 

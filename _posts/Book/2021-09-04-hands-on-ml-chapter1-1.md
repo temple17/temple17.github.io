@@ -55,8 +55,8 @@ much like scientists do
 - The training data is unlabeled
 - The system tries to learn without a teacher
 - The most important unsupervised learning algorithms(covered in chapter8 and 9)    
-![](/assets/images/book/unsuperalgo.png)    
-![](/assets/images/book/clustering.png)
+![](/assets/images/book/unsuperalgo.PNG)    
+![](/assets/images/book/clustering.PNG)
 - Typical task
   - dimensionality reduction
     - goal is to simplify the data without losing too much information   
@@ -69,11 +69,11 @@ much like scientists do
 #### Semisupervised Learning
 - some algorithms can deal with partially labeled training data,       
 usually a lot of unlabeled data and a little bit of labeld data    
-![](/assets/images/book/semisuper.png)
+![](/assets/images/book/semisuper.PNG)
 - most semisupervised learning algorithms are combinations of unsupervised and supervised algorithms
 
 
 #### Reinforcement Learning
 - The learning system(agent) in this context, can observe the environment, select and perform actions,    
 and get rewards in turn(or penalties in the form of negative rewards)     
-![](/assets/images/book/reinforcement.png)
+![](/assets/images/book/reinforcement.PNG)

@@ -13,7 +13,7 @@ tags:
 많은 통계분석 방법은 모집단이 중심위치를 기준으로 대칭이라고 가정
 
 ## 변수(자료) 형태
-![](/assets/images/statistics/자료형태.png)
+![](/assets/images/statistics/자료형태.PNG)
 
 - 분석목적
   - 비교 : X에 따라 Y에 차이가 있는가?
@@ -36,7 +36,7 @@ tags:
 - k개 범주형 변수에 대한 변수표
 - 타이타닉호 생존자와 사망자수
   - 변수 : 생존여부, 성별(어린이), 객실등급(승무원) = 24개(3차원)  
-  ![](/assets/images/statistics/titanic.png)
+  ![](/assets/images/statistics/titanic.PNG)
 
 # 그래프를 이용한 자료정리
 

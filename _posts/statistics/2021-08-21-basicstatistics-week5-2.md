@@ -17,7 +17,7 @@ tags:
   - 어떤 실험이 m개의 연속된 단계로 이루어짐
   - ni : i번째 단계에서 발생 가능한 결과의 수
   - 전체 실험에서 발생 가능한 경우의 수  
-  ![](/assets/images/statistics/numbercase.png) 
+  ![](/assets/images/statistics/numbercase.PNG) 
 
 ### 추출방법
 - 복원(with replacement)추출
@@ -26,7 +26,7 @@ tags:
 ### 뽑힌 순서
 - 순서고려 O
 - 순서고려 X  
-![](/assets/images/statistics/numbercase2.png) 
+![](/assets/images/statistics/numbercase2.PNG) 
   - A : 중복순열
   - B : 순열(permutation)
   - C : 중복조합

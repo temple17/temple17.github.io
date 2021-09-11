@@ -11,7 +11,7 @@ tags:
 # 베이즈 정리(Bayes' theorem)
 ***
 
-![](/assets/images/statistics/bayes1.png)  
+![](/assets/images/statistics/bayes1.PNG)  
 - 대부분 사건 A가 먼저 발생하고 B가 이어 발생하는 상황에 대한 확률
 - A는 원인, B는 결과의 형태를 가짐 => 코호트 연구
   - 전향적 연구(prospective study) : 원인 => 결과
@@ -23,9 +23,9 @@ tags:
 - 사건 B가 관측된 후의 A의 확률 => 사후확률(posterior probability
 
 ## 베이즈 정리
-![](/assets/images/statistics/bayes2.png)
+![](/assets/images/statistics/bayes2.PNG)
 - 베이즈 정리의 일반식  
-![](/assets/images/statistics/bayes3.png)
+![](/assets/images/statistics/bayes3.PNG)
 - 원인과 결과 형태의 문제에서 결과에 대한 원인 분석 가능
 
 

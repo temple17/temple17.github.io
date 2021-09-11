@@ -16,22 +16,22 @@ tags:
 - 표본크기 : n
 - 표본이 가질 수 있는 값 {x1,x2,..,xk}
 - ni : 표본 중 xi 값을 가지는 표본의 수   
-![](/assets/images/statistics/population variance.png)  
+![](/assets/images/statistics/population variance.PNG)  
   - pi = ni/n
 - n을 계속 크게 하면
-  ![](/assets/images/statistics/population variance1.png)  
+  ![](/assets/images/statistics/population variance1.PNG)  
 - 모분산을 시그마제곱으로 표시  
-  ![](/assets/images/statistics/population variance2.png)  
+  ![](/assets/images/statistics/population variance2.PNG)  
 - 확률변수 X의 분산을 Var(X)로 표시  
-  ![](/assets/images/statistics/population variance3.png)  
+  ![](/assets/images/statistics/population variance3.PNG)  
 
 ### 연속확률변수 X의 분산  
-![](/assets/images/statistics/population variance4.png)  
+![](/assets/images/statistics/population variance4.PNG)  
 - Var(aX+b) = a^2Var(X)  
-![](/assets/images/statistics/population variance5.png)  
+![](/assets/images/statistics/population variance5.PNG)  
   - 위치의 변화를 주는 상수 b는 분산에 영향을 주지 않ㅎ음
   - 분산은 측정단위의 제곱이기 때문에 a의 제곱을 곱합
-  - ![](/assets/images/statistics/population variance6.png)  
+  - ![](/assets/images/statistics/population variance6.PNG)  
 
 ### X~U(0,1) : Uniform distribution
 - 구간(0,1)에서 균등하게 분포 => 균일(균등)분포

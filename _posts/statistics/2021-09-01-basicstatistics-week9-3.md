@@ -16,7 +16,7 @@ tags:
 => 각 표본의 추출과정을 독립적이지 않음
 
 ## 확률질량함수 일반식:
-![](/assets/images/statistics/hypergeo.png)
+![](/assets/images/statistics/hypergeo.PNG)
 - N이 크고 N에 비해 n이 상대적으로 작은 경우
   - 비복원의 효과가 적기 때문에 베르누이 실험으로 근사
   - 초기하분포는 p = M/N인 이분항분포로 근사
@@ -24,18 +24,18 @@ tags:
 ### 기댓값
 - 초기하분포도 각 시행에서 A 집단에서 추출되면 1,  
 다른 집단에서 추출되면 0으로 표시한 확률변수의 합  
-![](/assets/images/statistics/hypergeo2.png)
+![](/assets/images/statistics/hypergeo2.PNG)
 - 그러나 베르누이와 다르게, 독립시행이 아니기 때문에, 확률은 동일하다.
 
-![](/assets/images/statistics/hypergeo3.png)  
+![](/assets/images/statistics/hypergeo3.PNG)  
 
 ***
 
-![](/assets/images/statistics/hypergeo4.png)
+![](/assets/images/statistics/hypergeo4.PNG)
 
 ***
 
-![](/assets/images/statistics/hypergeo5.png)
+![](/assets/images/statistics/hypergeo5.PNG)
 
 ## 품질관리 - Operating Characteristic(OC) curve
 - 초기하분포를 활용한다.
@@ -43,11 +43,11 @@ tags:
 - 불량전구의 개수가 1개 이하이면 이 회사의 전구를 구매
 - 만약 이 상자에 5개의 불량품이 있을 때, 구매할 확률은?
   - X = 10개 중 불량품의 수  
-![](/assets/images/statistics/hypergeo6.png)
+![](/assets/images/statistics/hypergeo6.PNG)
 
 ***
 
-![](/assets/images/statistics/hypergeo7.png)
+![](/assets/images/statistics/hypergeo7.PNG)
 
 - OC curve 계산 고려사항
   - 몇 개의 표본을 추출할 것인가?
