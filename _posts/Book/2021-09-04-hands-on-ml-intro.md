@@ -9,7 +9,8 @@ tags:
   - ML
 ---
 
-> All of materials(quotes, images, definitions) are from this book.
+> All of materials(quotes, images, definitions) are from this book.  
+It's all just for self-study.
 
 ## 책 소개
 
