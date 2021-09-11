@@ -1,5 +1,5 @@
 ---
-title: Book Review - Hands on Machine Learning(C2-1)
+title: Book Review - Hands on Machine Learning(C2-2)
 date: 2021-09-10 12:25:00
 toc: true
 toc_sticky: true
@@ -43,3 +43,5 @@ It's all just for self-study.
 
 ### Download the Data 
 - From this part, I'll upload this notebook on my github
+
+# This is my [github repository](https://github.com/temple17/hands-on-ml-practice)
