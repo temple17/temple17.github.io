@@ -28,7 +28,7 @@ tags:
 - a를 적절히 정하면 이상점을 제외시키면서 많은 표본정보 이용가능
   - a = 0 : 표본평균 / a = 50 : 표본중앙값
 - 실제 사용 : n개 중 작은 것과 큰 것 k개씩을 제외한 나머지 n-2k개의 표본평균  
-![](/assets/images/statistics/trimmedmean.png)
+![](/assets/images/statistics/trimmedmean.jpg)
 
 ## 표본최빈값(sample mode)
 - 자료 중 빈도가 가장 많은 값

@@ -15,8 +15,10 @@ tags:
 ## 왜도(skewness)
 - 자료가 대칭적으로 분포되어 있는지, 한쪽으로 기울어져 있는지에 대한 측도  
 ![](/assets/images/statistics/skewness.jpg)
-- 피어슨(Karl Pearson) 제안  
+- 피어슨(Karl Pearson) 제안
+
 ![](/assets/images/statistics/skewness2.png)  
+
 
 ![](/assets/images/statistics/skewness3.png)  
 
