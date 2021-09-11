@@ -17,10 +17,10 @@ tags:
 ![](/assets/images/statistics/skewness.jpg)
 - 피어슨(Karl Pearson) 제안
 
-![](/assets/images/statistics/skewness2.png)  
+![](./assets/images/statistics/skewness2.png)  
 
 
-![](/assets/images/statistics/skewness3.png)  
+![](./assets/images/statistics/skewness3.png)  
 
 - 오른쪽 꼬리가 길면 큰 양수값을 가짐(양의 왜도 <-> 음의 왜도)
 
