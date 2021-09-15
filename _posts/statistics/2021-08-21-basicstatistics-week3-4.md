@@ -1,5 +1,5 @@
 ---
-title: KMOOC 기초통계 3주차-4
+title: KMOOC 통계학의 이해1 3주차-4
 date: 2021-08-20 12:25:00
 toc: true
 toc_sticky: true
