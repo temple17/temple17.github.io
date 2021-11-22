@@ -15,99 +15,54 @@ It's all just for self-study.
 
 > Full codes are in my [github repository](https://github.com/temple17/hands-on-ml-practice) 
 
-## 1. Download the Data
-1. `gzip`, `bz2`, `lzam` 압축과 `tar` 아카이브 파일을 읽고 쓰기
-2. `urllib` 모듈을 활용하여 URL 작업 진행
-~~~python
-import tarfile
-from six.moves import urllib
-~~~
-3. `HOUSING_PATH`는 파일이 저장될 경로를 지정하기 위해 사용
-`HOUSING_ROOT`는 파일을 불러올 url을 지정
-4. 디렉토리 생성 및 파일 불러오기
-~~~python
-def fetch_housing_data(housing_url = HOUSING_URL, housing_path = HOUSING_PATH):
-    # directory가 없을 시 housing_paht 경로 생성
-    if not os.path.isdir(housing_path):
-        os.makedirs(housing_path)
-    tgz_path = os.path.join(housing_path, "housing.tgz")
-    # tgz_path라는 위치에 자료 저장
-    urllib.request.urlretrieve(housing_url, tgz_path)
-    # name에 대한 tarfile 객체를 반환함
-    housing_tgz = tarfile.open(tgz_path)
-    # extractall 함수로 여러 파일을 해제할 수 있음
-    housing_tgz.extractall(path = housing_path)
-    housing_tgz.close()
-~~~
-5. 저장된 파일 안에 있는 csv 파일 불러오기
-~~~python
-def load_housing_data(housing_path = HOUSING_PATH):
-    csv_path = os.path.join(housing_path, "housing.csv")
-    return pd.read_csv(csv_path)
-~~~
+## 1. Select algorithm and train a model
+1. Linear Regression Model
 
-## 2. Split train, test set
-1. `StratifiedShuffleSplit` 층화추출
 ~~~python
-from sklearn.model_selection import StratifiedShuffleSplit
-# set test_size, random_state, split set n
-# test/ train set -> n_splits = 1, test : 20% / train : 80%
-split = StratifiedShuffleSplit(n_splits = 1, test_size = 0.2, random_state=42)
-# return index of each datasets based on income_cat proportions
-for train_index, test_index in split.split(housing, housing['income_cat']):
-    strat_train_set = housing.loc[train_index]
-    strat_test_set = housing.loc[test_index]
+from sklearn.linear_model import LinearRegression
+lin_reg = LinearRegression()
+# fit lin_reg to train and test set
+lin_reg.fit(housing_prepared, housing_labels)
+# prediction and measure RMSE
+from sklearn.metrics import mean_squared_error
+# predict with whole dataset
+housing_predictions = lin_reg.predict(housing_prepared)
+# mean_squared_error(correct target_values, estimated values)
+lin_mse = mean_squared_error(housing_labels, housing_predictions)
+lin_rmse = np.sqrt(lin_mse)
+lin_rmse
 ~~~
+> The result was not powerful enough, so try DecisionTreeRegressor instead
 
-## 3. Handle categorical feature (ocean_proximity)
-1. First way : `OrdinalEncoder`
-~~~python
-from sklearn.preprocessing import OrdinalEncoder
-ordinal_encoder = OrdinalEncoder()
-housing_cat_encoded = ordinal_encoder.fit_transform(housing_cat)
-~~~
-> `OrdinalEncoder`는 카테고리형 자료에 대해서 각각 0부터 길이만큼 번호를 부여함
-> `fit_transform` 사용
+2. DecisionTreeRegressor Model
 
-2. Second way : `OneHotEncoder`
 ~~~python
-from sklearn.preprocessing import OneHotEncoder
-cat_encoder = OneHotEncoder()
-housing_cat_1hot = cat_encoder.fit_transform(housing_cat)
+from sklearn.tree import DecisionTreeRegressor
+tree_reg = DecisionTreeRegressor()
+# fit tree_reg to train and test set
+tree_reg.fit(housing_prepared, housing_labels)
+# prediction and measure RMSE
+housing_predictions = tree_reg.predict(housing_prepared)
+tree_mse = mean_squared_error(housing_labels, housing_predictions)
+tree_rmse = np.sqrt(tree_mse)
+tree_rmse
 ~~~
-> `OneHotEncoder`는 1과0의 성분만 가지는 행렬을 만든다.
-> `fit_transform` 사용
+> The result was 0. So the model overfits the data.
+> Need to use part of the training set for training and part for model validation.
 
-## 4. Feature Scaling & Pipeline
-1. First way : `StandardScaler`
-~~~python
-from sklearn.pipeline import Pipeline
-from sklearn.preprocessing import StandardScaler
-num_pipeline = Pipeline([
-                         ('imputer', SimpleImputer(strategy = 'median')),
-                         ('attribs_adder', CombinedAttributesAdder()),
-                         ('std_scaler', StandardScaler()),
-])
-housing_num_tr = num_pipeline.fit_transform(housing_num)
-~~~
+### 2.1 Cross_val_score using `neg_mean_squared_error`
+- The higher `tree_rmse_scores` becomes, the better model performs. 
 
-2. Second way : `ColumnTranformer` (Better)
+## 3. RandomForestRegressor
 ~~~python
-from sklearn.compose import ColumnTransformer
-num_attribs = list(housing_num)
-cat_attribs = ['ocean_proximity']
-# num_pipeline : Scale number type columns
-# OneHotEncoder : handle categorical data type
-full_pipeline = ColumnTransformer([
-                                   ('num', num_pipeline, num_attribs),
-                                   ('cat', OneHotEncoder(), cat_attribs),
-])
-housing_prepared = full_pipeline.fit_transform(housing)
+from sklearn.ensemble import RandomForestRegressor
+forest_reg = RandomForestRegressor()
+forest_reg.fit(housing_prepared, housing_labels)
+housing_predictions = forest_reg.predict(housing_prepared)
+forest_scores = cross_val_score(forest_reg, housing_prepared, housing_labels,
+                                scoring = 'neg_mean_squared_error', cv = 10)
+forest_rmse = np.sqrt(-forest_scores)
+display_scores(forest_rmse)
 ~~~
-> How it works
-  > 1. import the ColumnTransformer class
-  > 2. get the list of numerical column names    
-    and the list of categorical column names, and construct ColumnTransformer
-  > 3. Finally apply this ColumnTrasformer to the housing data
 
 > Continue on next page
