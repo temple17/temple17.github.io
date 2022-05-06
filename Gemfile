@@ -7,3 +7,4 @@ gem "tzinfo"
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw]
 gem 'jekyll-include-cache'
 gem 'wdm', '>= 0.1.0'
+gem 'jekyll-sitemap'
