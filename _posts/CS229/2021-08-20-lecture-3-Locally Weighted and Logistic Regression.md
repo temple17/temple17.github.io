@@ -1,5 +1,5 @@
 ---
-title: CS229 Lecture 3 - Locally Weighted & Logistic Regression
+title: CS229 Lecture 3 - Locally Weighted and Logistic Regression
 date: 2021-09-03 12:25:00
 toc: true
 toc_sticky: true
