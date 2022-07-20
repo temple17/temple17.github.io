@@ -1,6 +1,6 @@
 ---
 title: Netflix Movies and TV Shows (1) Intro
-date: 2022-07-10 12:25:00
+date: 2022-07-19 12:25:00
 categories: kaggle
 tags:
   - kaggle
@@ -8,48 +8,17 @@ tags:
   - First Kaggle
 ---
 
-> 1주일에 1캐글을 목표로, 7월 11일부터 8월 7일까지 4개의 캐글 노트북에 대한 글을 정리하려 합니다.   
-> 첫번째 캐글은 [Netflix Movies and TV Shows](https://www.kaggle.com/datasets/shivamb/netflix-shows) 라는 데이터셋입니다.
+> 해당 그래프와 코드는 [Josh's notebook](https://www.kaggle.com/code/joshuaswords/netflix-data-visualization)을 참고한 것임을 밝힙니다.   
+> 해당 노트북은 [안수빈님의 notebook](https://www.kaggle.com/code/subinium/awesome-visualization-with-titanic-dataset)에서 다양한 디자인 기법에서 영감을 받은 것으로 Netflix의 brand palette와 Insight를 결합한 visualization을
+> 구현했다는 점에서 공부할 가치가 충분히 있다고 생각합니다.
 
-# 데이터 소개
-해당 데이터는 넷플릭스에 상영되는 드라마와 영화에 대한 기본 정보를 포함한 데이터셋입니다.   
-제목, 디렉터, 국가, 장르 등 총 12개의 칼럼을 가진 데이터 셋이고,   
-캐글에서 현재 usability 10점만점에 10점, 그리고 총 업로드 된 노트북이 1천개가 넘는   
-인기 높은 데이터 셋입니다.
 
-***
+# 1. Top 10 countries on Netflix
+첫번째 그래프는 type(영화, 방송)에 구분 없이 가장 많은 콘텐츠를 생산하고 있는 상위 10개의 국가를 나타낸 그래프입니다.
+![](/assets/images/netlifx/top%2010%20countries%20on%20netflix.PNG)
 
-# Interesting Task Ideas
-- 해당 항목은 캐글에서 제안하는 4가지 아이디어입니다.   
-1. Understanding what content is available in different countries
-2. Identifying similar content by matching text-based features
-3. Network analysis of Actors / Directors and find interesting insights
-4. Does Netflix has more focus on TV Shows than movies in recent years.
-
-***
-
-# Exploratory Data Analysis Steps
-데이터 분석 과정은 크게 아래의 카테고리별로 진행할 예정입니다.   
-EDA에 관한 아티클로 [analyticsvidhya](https://www.analyticsvidhya.com/blog/2016/01/guide-data-exploration)를 추천드립니다.
-
-## 1. Setting the goals about the dataset
-- Find popular tv shows and movies
-- Find similarities between these programs
-- Geographical difference
-- Distribution by genre
-
-## 2. Data Exploration and Data preparation
-### 2.1 Univariate analysis
-### 2.2 Bi-variate analysis
-### 2.3 Missing value treatment
-### 2.4 Outlier treatment
-#### 2.4.1 Detect outlier
-#### 2.4.2 Remove outlier
-
-## 3. Feature engineering
-### 3.1 Variable transformation
-### 3.2 Variable / feature selection
-### 3.3 Variable creation
+# 2. Top 10 countries Movie & TV Show split
+![](/assets/images/netlifx/top10%20countries%20movie%20&%20tv%20show%20split.png)
 
 # 업로드 주소
 해당 주피터 노트북은 [여기](https://github.com/temple17/kagglepractice/blob/main/Netflix_Movies_and_TV_Shows.ipynb)에     
