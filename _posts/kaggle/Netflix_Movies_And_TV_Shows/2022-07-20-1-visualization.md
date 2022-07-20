@@ -1,5 +1,5 @@
 ---
-title: Netflix Movies and TV Shows (0) Intro
+title: Netflix Movies and TV Shows (1) Intro
 date: 2022-07-10 12:25:00
 categories: kaggle
 tags:
