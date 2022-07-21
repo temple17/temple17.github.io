@@ -15,10 +15,164 @@ tags:
 
 # 1. Top 10 countries on Netflix
 첫번째 그래프는 type(영화, 방송)에 구분 없이 가장 많은 콘텐츠를 생산하고 있는 상위 10개의 국가를 나타낸 그래프입니다.
-![](/assets/images/netlifx/top%2010%20countries%20on%20netflix.PNG)
+![](/assets/images/netflix/top%2010%20countries%20on%20netflix.PNG)
+이 그래프를 일정한 단계로 끊어서 build 해보겠습니다.
+
+## 1.1 Netflix brand color
+~~~python
+sns.palplot(['#fafafa', '#4a4a4a', '#e3120b'])
+plt.title('Netfilx brand palette', loc = 'left', fontfamily='serif', fontsize=15, y=1.2)
+~~~
+![](/assets/images/netflix/netflix palplot.PNG)
+
+## 1.2 Top 10 countries' colors
+~~~python
+color_map = ['#f5f5f1' for _ in range(10)]
+color_map[0] = color_map[1] = color_map[2] = '#e3120b'
+~~~
+상위 10개 국가를 나타내기 위해서 기본적으로 10개의 bar를 모두 #f5f5f1 색으로 지정하고   
+상위 3개의 국가는 넷플릭스의 대표 색으로 지정합니다.
+
+## 1.3 순서대로 그래프 그리기
+
+### 1.3.1 
+~~~python
+fig, ax = plt.subplots(1, 1, figsize=(12,6))
+ax.bar(data.index, data, width=0.5, edgecolor='darkgrey', linewidth = 0.6, color = color_map)
+~~~
+![](/assets/images/netflix/131.PNG)
+- 가장 기본적인 barplot입니다.
+
+### 1.3.2
+~~~python
+for i in data.index:
+    ax.annotate(f"{data[i]}",
+                xy=(i, data[i]+150),
+                va='center', ha='center', fontweight='light',fontfamily='serif')
+    
+for s in ['top', 'left','right']:
+    ax.spines[s].set_visible(False)
+~~~
+![](/assets/images/netflix/132.PNG)
+- `ax.annotate` 함수를 통해 각각의 bar위에 annotation을 표기해줍니다.
+- top, left, right 의 axis를 제거해줍니다.
+
+### 1.3.3
+~~~python
+ax.set_xticklabels(data.index, fontfamily = 'serif', rotation=0)
+
+fig.text(0.09, 1, 'Top 10 countries on Netflix', fontsize=15, fontweight='bold', fontfamily='serif')
+fig.text(0.09, 0.95, 'The three most frequent countries bave been highlighted', fontsize=12, fontweight='light', fontfamily='serif')
+
+fig.text(1.1, 1.01, 'Insight', fontsize=15, fontweight='bold', fontfamily='serif')
+
+fig.text(1.1, 0.67, '''
+The most prolific producers of
+content for Netflix are, primarily,
+the USA, with India and the UK
+a significant distance behind.
+
+It makes sense that the USA produces 
+the most content as, afterall, 
+Netflix is a US company
+''', fontsize=12, fontweight='light', fontfamily='serif')
+~~~
+![](/assets/images/netflix/133.PNG)
+- xticklabel의 글꼴을 serif로 변환해줍니다.
+- fig.text함수는 plot 내에 글자를 삽입할 수 있도록 합니다.
+- (0, 0)은 왼쪽 아래, (1, 1)은 오른쪽 위를 나타냅니다.
+
+### 1.3.4
+~~~python
+ax.grid(axis='y', linestyle='-', alpha=0.4)
+grid_y_ticks= np.arange(0, 5000, 500)
+ax.set_yticks(grid_y_ticks)
+ax.set_axisbelow(True)
+
+plt.axhline(y=0, color='black', linewidth=1.3, alpha=.7)
+
+ax.tick_params(axis='both', which='major', labelsize=12)
+~~~
+![](/assets/images/netflix/134.PNG)
+- y축의 눈금을 기준으로 grid를 그려줍니다.
+- `set_yticks`를 이용해서 y축 범위를 0~4500을 500씩 끊어줍니다.
+- 보조선이 아래쪽에 위치할 수 있도록 True값을 지정해줍니다.
+- `axhline`은 x axis의 line style을 지정해줍니다. 더 두껍고, 더 어둡게 설정해서 이전 그래프보다 눈에 띄도록 합니다.
+- `tick_params`는 minor인 경우, major label 사이사이에 보조 label이 들어가도록 하는데 이 그래프에서는 major만 사용하도록 합니다.
+
+### 1.3.5
+~~~python
+import matplotlib.lines as lines
+
+l1 = lines.Line2D([1,1],[1, 0], transform = fig.transFigure, figure=fig, color='black', lw=0.2)
+
+fig.lines.extend([l1])
+
+ax.tick_params(axis=u'both', which=u'both', length=0)
+
+plt.savefig('top10 countries on netflix.png')
+~~~
+![](/assets/images/netflix/top%2010%20countries%20on%20netflix.PNG)
+- `fig.transFigure`의 경우 앞서 (0,0)은 왼쪽 아래, (1,1)은 오른쪽 위를 나타냈는데
+- 이에 맞춰 1,1 에서 1,0 으로 내려가는 직선을 그려줍니다.
+- line을 선언하고, extend 함수로 그려줍니다.
+- `ax.tick_params`를 이용해서 xtick과 ytick에 작게 남아있던 눈금을 지워줍니다.
+
+### 전체 코드
+~~~python
+fig, ax = plt.subplots(1, 1, figsize=(12,6))
+ax.bar(data.index, data, width=0.5, edgecolor='darkgrey', linewidth = 0.6, color = color_map)
+
+for i in data.index:
+    ax.annotate(f"{data[i]}",
+                xy=(i, data[i]+150),
+                va='center', ha='center', fontweight='light',fontfamily='serif')
+    
+for s in ['top', 'left','right']:
+    ax.spines[s].set_visible(False)
+
+ax.set_xticklabels(data.index, fontfamily = 'serif', rotation=0)
+
+fig.text(0.09, 1, 'Top 10 countries on Netflix', fontsize=15, fontweight='bold', fontfamily='serif')
+fig.text(0.09, 0.95, 'The three most frequent countries bave been highlighted', fontsize=12, fontweight='light', fontfamily='serif')
+
+fig.text(1.1, 1.01, 'Insight', fontsize=15, fontweight='bold', fontfamily='serif')
+
+fig.text(1.1, 0.67, '''
+The most prolific producers of
+content for Netflix are, primarily,
+the USA, with India and the UK
+a significant distance behind.
+
+It makes sense that the USA produces 
+the most content as, afterall, 
+Netflix is a US company
+''', fontsize=12, fontweight='light', fontfamily='serif')
+
+ax.grid(axis='y', linestyle='-', alpha=0.4)
+grid_y_ticks= np.arange(0, 5000, 500)
+ax.set_yticks(grid_y_ticks)
+ax.set_axisbelow(True)
+
+plt.axhline(y=0, color='black', linewidth=1.3, alpha=.7)
+
+ax.tick_params(axis='both', which='both', labelsize=12)
+
+import matplotlib.lines as lines
+
+l1 = lines.Line2D([1,1], [1, 0],transform = fig.transFigure, figure=fig, color='black', lw=0.2)
+
+fig.lines.extend([l1])
+
+ax.tick_params(axis=u'both', which=u'both', length=0)
+
+plt.savefig('top10 countries on netflix.png')
+~~~
+
+> 다음으로 Top 10 countries의 영화와 방송 비율을 horizontal bar chart로 나타내는 것을 상세하게 살펴보겠습니다.
 
 # 2. Top 10 countries Movie & TV Show split
-![](/assets/images/netlifx/top10%20countries%20movie%20&%20tv%20show%20split.png)
+![](/assets/images/netflix/top10%20countries%20movie%20&%20tv%20show%20split.png)
 
 # 업로드 주소
 해당 주피터 노트북은 [여기](https://github.com/temple17/kagglepractice/blob/main/Netflix_Movies_and_TV_Shows.ipynb)에     
