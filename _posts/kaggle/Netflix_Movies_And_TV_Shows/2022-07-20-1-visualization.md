@@ -1,11 +1,10 @@
 ---
-title: Netflix Movies and TV Shows (1) Top 10 countries on Netflix
+title: Netflix Movies and TV Shows (2) Top 10 countries on Netflix
 date: 2022-07-19 12:25:00
 categories: kaggle
 tags:
   - kaggle
-  - 1 Month 4 Kaggles
-  - First Kaggle
+  - netflix
 ---
 
 > 해당 그래프와 코드는 [Josh's notebook](https://www.kaggle.com/code/joshuaswords/netflix-data-visualization)을 참고한 것임을 밝힙니다.   
